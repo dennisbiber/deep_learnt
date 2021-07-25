@@ -1,6 +1,7 @@
 from lossFunctions import *
 from tensorflow.keras.datasets import fashion_mnist
 
+__author__ = "Dennis Biber <dennisbiber88@gmail.com>"
 
 class PrepModel(object):
 
@@ -64,6 +65,7 @@ class PrepModel(object):
         '''
         pred = y_pred.ravel() < 0.5
         return np.mean(pred == y_true)
+
 
 class Plots(object):
 
